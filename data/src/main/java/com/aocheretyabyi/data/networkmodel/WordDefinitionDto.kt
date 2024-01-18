@@ -1,4 +1,4 @@
-package com.aocheretyabyi.data1.networkmodel
+package com.aocheretyabyi.data.networkmodel
 
 import com.google.gson.annotations.SerializedName
 

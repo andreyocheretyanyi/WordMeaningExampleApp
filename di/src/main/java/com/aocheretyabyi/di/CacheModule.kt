@@ -1,6 +1,6 @@
 package com.aocheretyabyi.di
 
-import com.aocheretyabyi.data1.cache.SimpleLocalCache
+import com.aocheretyabyi.data.cache.SimpleLocalCache
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

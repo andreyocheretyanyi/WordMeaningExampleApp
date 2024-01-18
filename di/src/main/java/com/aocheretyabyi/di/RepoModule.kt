@@ -1,6 +1,6 @@
 package com.aocheretyabyi.di
 
-import com.aocheretyabyi.data1.repo.WordDefinitionRepoImpl
+import com.aocheretyabyi.data.repo.WordDefinitionRepoImpl
 import com.aocheretyabyi.domain.abstractions.repo.WordDefinitionRepo
 import dagger.Binds
 import dagger.Module

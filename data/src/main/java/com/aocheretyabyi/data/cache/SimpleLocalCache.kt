@@ -1,6 +1,6 @@
-package com.aocheretyabyi.data1.cache
+package com.aocheretyabyi.data.cache
 
-import com.aocheretyabyi.data1.networkmodel.WordDefinitionDto
+import com.aocheretyabyi.data.networkmodel.WordDefinitionDto
 
 class SimpleLocalCache {
     private val cache: MutableMap<String, WordDefinitionDto> = mutableMapOf()

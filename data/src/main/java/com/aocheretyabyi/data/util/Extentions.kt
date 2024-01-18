@@ -1,8 +1,8 @@
-package com.aocheretyabyi.data1.util
+package com.aocheretyabyi.data.util
 
-import com.aocheretyabyi.data1.networkmodel.DefinitionsDto
-import com.aocheretyabyi.data1.networkmodel.MeaningsDto
-import com.aocheretyabyi.data1.networkmodel.WordDefinitionDto
+import com.aocheretyabyi.data.networkmodel.DefinitionsDto
+import com.aocheretyabyi.data.networkmodel.MeaningsDto
+import com.aocheretyabyi.data.networkmodel.WordDefinitionDto
 import com.aocheretyabyi.domain.model.Definitions
 import com.aocheretyabyi.domain.model.Meanings
 import com.aocheretyabyi.domain.model.WordDefinition

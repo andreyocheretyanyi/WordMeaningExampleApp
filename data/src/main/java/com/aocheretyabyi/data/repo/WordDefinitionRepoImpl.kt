@@ -1,8 +1,8 @@
-package com.aocheretyabyi.data1.repo
+package com.aocheretyabyi.data.repo
 
-import com.aocheretyabyi.data1.network.Api
-import com.aocheretyabyi.data1.util.toDomain
-import com.aocheretyabyi.data1.cache.SimpleLocalCache
+import com.aocheretyabyi.data.network.Api
+import com.aocheretyabyi.data.util.toDomain
+import com.aocheretyabyi.data.cache.SimpleLocalCache
 import com.aocheretyabyi.domain.abstractions.repo.WordDefinitionRepo
 import com.aocheretyabyi.domain.model.WordDefinition
 import javax.inject.Inject
