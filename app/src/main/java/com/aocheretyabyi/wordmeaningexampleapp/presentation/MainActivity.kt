@@ -23,8 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             WordMeaningExampleAppTheme {
                 Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = Color.Transparent
+                    modifier = Modifier.fillMaxSize(), color = Color.Transparent
                 ) {
                     val navController = rememberNavController()
                     navController.addOnDestinationChangedListener { _, destination, _ ->

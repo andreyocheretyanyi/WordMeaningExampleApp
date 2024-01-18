@@ -17,4 +17,4 @@ rootProject.name = "WordMeaningExampleApp"
 include(":app")
 include(":domain")
 include(":di")
-include(":data1")
+include(":data")

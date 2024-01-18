@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">WordMeaningExampleApp</string>
+    <string name="enter_one_en_word">Enter one EN word</string>
+    <string name="get_definition">Get definition</string>
+    <string name="phonetic">Phonetic</string>
+    <string name="see_detail_definitions">See detail definitions</string>
+    <string name="definition_not_found_or_there_is_an_error">Definition not found or there is an error</string>
+    <string name="there_are_no_definitions">There are no definitions</string>
 </resources>

@@ -18,12 +18,11 @@ class DefinitionDetailsViewModel @Inject constructor(private val getDetailedDefi
 
     private fun getDetailedDefinitions(word: String) {
         viewModelScope.launch {
-            getDetailedDefinitionsUseCase.getDetailedDefinitions(word).fold(
-                onSuccess = {
-                    _data.value = it
-                }, onFailure = {
-                    _data.value = listOf()
-                })
+            getDetailedDefinitionsUseCase.getDetailedDefinitions(word).fold(onSuccess = {
+                _data.value = it
+            }, onFailure = {
+                _data.value = listOf()
+            })
         }
     }
 

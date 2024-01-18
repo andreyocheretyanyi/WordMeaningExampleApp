@@ -9,7 +9,9 @@ java {
 }
 
 dependencies {
+    implementation(Dependencies.retorfit)
+    implementation (Dependencies.gson_converter)
+    implementation(Dependencies.okHtttp)
     implementation (Dependencies.javaxInject)
-
+    implementation(project(":domain"))
 }
-

@@ -29,11 +29,9 @@ class HomeViewModel @Inject constructor(private val useCase: GetWordDefinitionUs
     private fun getDefinition(word: String) {
         getDefinitionJob?.cancel()
         getDefinitionJob = viewModelScope.launch {
-            useCase.getWordDefinitionResult(word).fold(
-                onSuccess = { wordDefinition ->
-                    _state.value = HomeState.HomeStateSuccess(wordDefinition, true)
-                },
-                onFailure = { error -> _state.value = HomeState.Error("Some error") })
+            useCase.getWordDefinitionResult(word).fold(onSuccess = { wordDefinition ->
+                _state.value = HomeState.HomeStateSuccess(wordDefinition, true)
+            }, onFailure = { error -> _state.value = HomeState.Error("Some error") })
         }
     }
 }

@@ -1,6 +1,5 @@
 package com.aocheretyabyi.data1.network
 
-import com.aocheretyabyi.data1.networkmodel.WordDefinitionDto
 import com.aocheretyabyi.data1.networkmodel.WordDefinitionResult
 import retrofit2.Response
 import retrofit2.http.GET

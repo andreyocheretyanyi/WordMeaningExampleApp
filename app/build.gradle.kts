@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.8"
     }
     packaging {
         resources {
@@ -53,21 +53,21 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation(platform("androidx.compose:compose-bom:2023.08.00"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
-    implementation("com.google.dagger:hilt-android:2.48")
-    kapt("com.google.dagger:hilt-android-compiler:2.48")
-    implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
-    implementation("androidx.navigation:navigation-compose:2.7.6")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
+    implementation(Dependencies.androidx_core)
+    implementation(Dependencies.androidx_lifecycle_runtime)
+    implementation(Dependencies.androidx_lifecycle_vm)
+    implementation(Dependencies.androidx_activity_compose)
+    implementation(platform(Dependencies.composeBOM))
+    implementation(Dependencies.compose_ui)
+    implementation(Dependencies.compose_ui_graphic)
+    implementation(Dependencies.compose_tooling_preview)
+    implementation(Dependencies.compose_material3)
+    implementation(Dependencies.hilt)
+    kapt(Dependencies.hilt_compiler)
+    implementation(Dependencies.hilt_nav_compose)
+    implementation(Dependencies.compose_viewmodel)
+    implementation(Dependencies.compose_navigation)
+    implementation(Dependencies.kotlin_coroutines)
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
