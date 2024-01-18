@@ -8,8 +8,7 @@ data class WordDefinitionDto(
     @SerializedName("word") var word: String? = null,
     @SerializedName("phonetic") var phonetic: String? = null,
     @SerializedName("phonetics") var phonetics: ArrayList<Phonetics> = arrayListOf(),
-    @SerializedName("origin") var origin: String? = null,
-    @SerializedName("meanings") var meanings: ArrayList<Meanings> = arrayListOf()
+    @SerializedName("meanings") var meanings: ArrayList<MeaningsDto> = arrayListOf()
 )
 
 data class Phonetics(
@@ -17,14 +16,12 @@ data class Phonetics(
     @SerializedName("audio") var audio: String? = null
 )
 
-data class Definitions(
+data class DefinitionsDto(
     @SerializedName("definition") var definition: String? = null,
     @SerializedName("example") var example: String? = null,
-    @SerializedName("synonyms") var synonyms: ArrayList<String> = arrayListOf(),
-    @SerializedName("antonyms") var antonyms: ArrayList<String> = arrayListOf()
 )
 
-data class Meanings(
+data class MeaningsDto(
     @SerializedName("partOfSpeech") var partOfSpeech: String? = null,
-    @SerializedName("definitions") var definitions: ArrayList<Definitions> = arrayListOf()
+    @SerializedName("definitions") var definitions: ArrayList<DefinitionsDto> = arrayListOf()
 )

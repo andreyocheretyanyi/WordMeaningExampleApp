@@ -2,7 +2,7 @@ package com.aocheretyabyi.di
 
 import com.aocheretyabyi.data1.network.Api
 import com.aocheretyabyi.data1.network.SimpleInterceptor
-import com.aocheretyabyi.data.util.Constants
+import com.aocheretyabyi.data1.util.Constants
 import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
